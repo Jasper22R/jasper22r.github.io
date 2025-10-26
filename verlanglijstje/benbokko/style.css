@@ -26,6 +26,10 @@ body {
     max-height: 300px;
 }
 
+.itemplaatje:hover {
+    transform: scale(1.2);
+}
+
 .links {
     margin-top: auto;
     border-color: #2fbbff;
@@ -38,6 +42,10 @@ body {
     animation: kleur 5s linear infinite;
     color: rgb(255, 0, 0);
     text-align: left;
+}
+
+.links a:hover {
+    color: white !important;
 }
 
 #ganaar {

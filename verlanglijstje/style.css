@@ -39,6 +39,16 @@
 .itemplaatje {
     max-height: 400px;
     object-fit: contain;
+    transition: ease 0.2s;
+}
+
+.plaatjesdiv {
+    overflow: hidden;
+    text-align: center;
+}
+
+.itemplaatje:hover {
+    transform: scale(1.1);
 }
 
 .beschrijving {
