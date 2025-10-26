@@ -25,6 +25,7 @@
         black 0 0 2em -1em,
         rgb(236, 205, 152) 1em 1em;
     overflow: hidden;
+    text-align: justify;
 }
 
 .itemtitel {
@@ -32,10 +33,11 @@
     width: fit-content;
     font-size: xx-large;
     font-weight: bolder;
+    text-align: center;
 }
 
 .itemplaatje {
-    max-height: 300px;
+    max-height: 400px;
     object-fit: contain;
 }
 
@@ -68,4 +70,44 @@ hr {
     width: 100%;
     color: rgb(66, 66, 89);
     border: solid 0.5px;
+}
+
+#ganaar {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    padding: 1em;
+    background-color: rgb(66, 66, 89);
+    border-radius: 1em;
+    border: 1px rgb(78, 103, 119) solid;
+    box-shadow:
+        black 0 0 2em -1em,
+        rgb(236, 205, 152) 0.5em 0.5em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+#ganaar:hover {
+    cursor: pointer;
+}
+
+#ganaar:hover a {
+    background-color: hsla(160, 100%, 75%, 20%);
+    border: solid hsla(160, 100%, 75%, 50%) 1px;
+}
+
+#ganaar a {
+    background-color: hsla(160, 100%, 75%, 10%);
+    border: solid hsla(160, 100%, 75%, 25%) 1px;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        padding-top: 5em;
+    }
 }

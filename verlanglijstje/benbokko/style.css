@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(135deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 50%, rgba(9, 9, 121, 1) 56%, rgba(2, 0, 36, 1) 100%);
+    background-size: 400%;
+    animation: lijnbeweeg 6s cubic-bezier(.65,.05,.36,1) infinite;
+}
+
+.items {
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    gap: 2em;
+    background-color: rgb(72, 68, 198);
+    box-shadow: black 0 0 2em -1em, rgb(26, 33, 125) 1em 1em;
+}
+
+.itemplaatje {
+    max-height: 300px;
+}
+
+.links {
+    margin-top: auto;
+    border-color: #2fbbff;
+    border-left-style: solid;
+}
+
+.links a {
+    font-size: large;
+    font-weight: bold;
+    animation: kleur 5s linear infinite;
+    color: rgb(255, 0, 0);
+}
+
+#ganaar {
+    background-color: rgb(72, 68, 198);
+    box-shadow: black 0 0 2em -1em, rgb(26, 33, 125) 1em 1em;
+}
+
+#ganaar:hover a {
+    border: solid hsla(200, 100%, 59%, 50%) 1px;
+}
+
+#ganaar a {
+    border: solid hsla(200, 100%, 59%, 25%) 1px;
+    animation: kleur 5s linear infinite;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes lijnbeweeg {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+    100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes kleur {
+    0% {
+		color: #FF0000;
+	}
+    16.67% {
+		color: #FFFF00;
+	}
+    33.33% {
+		color: #00FF00;
+	}
+    50% {
+		color: #00FFFF;
+	}
+    66.67% {
+		color: #0000FF;
+	}
+    83.33% {
+		color: #FF00FF;
+	}
+    100% {
+		color: #FF0000;
+	}
+}
