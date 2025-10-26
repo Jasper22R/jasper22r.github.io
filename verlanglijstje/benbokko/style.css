@@ -37,6 +37,7 @@ body {
     font-weight: bold;
     animation: kleur 5s linear infinite;
     color: rgb(255, 0, 0);
+    text-align: left;
 }
 
 #ganaar {
